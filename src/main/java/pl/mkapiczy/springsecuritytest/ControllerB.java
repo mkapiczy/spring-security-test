@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ControllerB {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public HttpEntity<String> validateToken() {
+    public HttpEntity<String> b() {
         return new HttpEntity<>("b");
     }
 }

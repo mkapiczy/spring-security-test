@@ -30,7 +30,7 @@ class ControllerBITest {
     }
 
     @Test
-    void testA() {
+    void testB() {
         ResponseEntity<String> response = restTemplate.exchange("b", HttpMethod.GET, RequestEntity.EMPTY, String.class);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
